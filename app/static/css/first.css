@@ -1,1 +1,135 @@
-/* 开始 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    list-style: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* display: none; */
+}
+#top{
+    width:398px;
+    height: 44px;
+    margin: 0 auto;
+    border: 7px solid #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top .biqiang{
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+}
+#top .biqiang a{
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+#top .gengduo a{
+    
+}
+/* 头部结束 */
+.wrapper {
+    width: 398px;
+    height: 398px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding:14px 0 0 20px;
+    border-bottom: 13px solid #f2f2f2;
+    border-right: 6px solid #f2f2f2;
+}
+.wrapper .button_left {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    width: 30px;
+    height: 64px;
+    background: url(../images/index.png) no-repeat;
+    background-position: -161px -145px;
+    z-index: 1000;
+}
+
+.wrapper .button_right {
+    width: 30px;
+    height: 64px;
+    background: url(../images/index.png) no-repeat;
+    background-position: -198px -145px;
+    position: absolute;
+    top: 150px;
+    left: 368px;
+    z-index: 1000;
+}
+
+.wrapper:hover button {
+    display: block;
+
+}
+.wrapper .button_left:hover{
+    background-position: -82px -145px;
+}
+.wrapper .button_right:hover{
+    background-position: -120px -145px;
+}
+.wrapper .img_small img{
+    width: 112px;
+    height: 114px;
+}
+#box .pic_box .text p:nth-child(1){
+    font-size: 18px;
+    text-align: center;
+}
+#box .pic_box .text p:nth-child(2){
+    
+    white-space: wrap;
+}
+ul {
+    position: relative;
+    width: 9999px;
+}
+
+ul li {
+    float: left;
+    width: 398px;
+    height: 398px;
+}
+ul li .pic_box{
+    width: 398px;
+    height: 398px;
+}
+ul li .pic_box .img_big{
+    width: 350px;
+    height: 150px;
+}
+ol {
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    width: 190px;
+}
+
+ol li {
+    float: left;
+    width: 12px;
+    height: 6px;
+    margin: 0 10px;
+    border-radius: 30%;
+    cursor: default;
+    background-color: rgb(241, 234, 234);
+}
+
+ol li.current {
+    background-color: #69a88f;
+    color: #fff;
+}

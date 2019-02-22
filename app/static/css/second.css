@@ -1,0 +1,15 @@
+#list-box_wrapper{
+
+}
+.content{
+
+}
+.list_box_top{
+
+}
+.list_box_top ul{
+    display: flex;
+}
+.list_box_bottom ul{
+    display: flex;
+}
